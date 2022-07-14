@@ -5,8 +5,8 @@ import '../global.tsx';
 import { plugin } from './core/plugin';
 import './core/pluginRegister';
 import { createHistory } from './core/history';
-import { ApplyPluginsType } from '/Users/bo_mac01/Documents/workspace/nodejs_workspace/gam_web/node_modules/@umijs/runtime';
-import { renderClient } from '/Users/bo_mac01/Documents/workspace/nodejs_workspace/gam_web/node_modules/@umijs/renderer-react/dist/index.js';
+import { ApplyPluginsType } from '/Users/bo_mac01/Documents/workspace/nodejs_workspace/gam_cms/node_modules/@umijs/runtime';
+import { renderClient } from '/Users/bo_mac01/Documents/workspace/nodejs_workspace/gam_cms/node_modules/@umijs/renderer-react/dist/index.js';
 import { getRoutes } from './core/routes';
 
 
@@ -15,7 +15,7 @@ import { _onCreate } from './plugin-locale/locale';
 _onCreate();
 (() => {
   // Runtime block add component
-  window.GUmiUIFlag = require('/Users/bo_mac01/Documents/workspace/nodejs_workspace/gam_web/node_modules/@umijs/plugin-ui-blocks/lib/sdk/flagBabelPlugin/GUmiUIFlag.js').default;
+  window.GUmiUIFlag = require('/Users/bo_mac01/Documents/workspace/nodejs_workspace/gam_cms/node_modules/@umijs/plugin-ui-blocks/lib/sdk/flagBabelPlugin/GUmiUIFlag.js').default;
 
   // Enable/Disable block add edit mode
   window.addEventListener(
@@ -85,9 +85,9 @@ export default clientRender();
         if (isIE) return;
 
         // Umi UI Bubble
-        require('/Users/bo_mac01/Documents/workspace/nodejs_workspace/gam_web/node_modules/@umijs/preset-ui/lib/bubble').default({
+        require('/Users/bo_mac01/Documents/workspace/nodejs_workspace/gam_cms/node_modules/@umijs/preset-ui/lib/bubble').default({
           port: 3000,
-          path: '/Users/bo_mac01/Documents/workspace/nodejs_workspace/gam_web',
+          path: '/Users/bo_mac01/Documents/workspace/nodejs_workspace/gam_cms',
           currentProject: '',
           isBigfish: undefined,
         });

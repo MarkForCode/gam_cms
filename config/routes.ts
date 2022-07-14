@@ -21,7 +21,7 @@ export default [
           {
             path: '/',
             component: '../layouts/BasicLayout',
-            authority: ['ADMIN', 'NORMAL'],
+            authority: ['ROOT', 'OPERATOR'],
             routes: [
               {
                 path: '/',
@@ -38,28 +38,53 @@ export default [
                 name: 'admin',
                 icon: 'crown',
                 component: './Admin',
-                authority: ['ADMIN'],
+                authority: ['ROOT'],
                 routes: [
                   {
                     path: '/admin/sub-page',
                     name: 'sub-page',
                     icon: 'smile',
                     component: './Welcome',
-                    authority: ['ADMIN'],
+                    authority: ['ROOT'],
                   },
                 ],
               },
               {
-                name: 'list.table-list',
-                icon: 'table',
-                path: '/list',
-                component: './TableList',
+                name: '帳號查詢',
+                icon: 'smile',
+                path: '/account',
+                component: './ListAccount',
               },
               {
-                name: '群組',
+                name: '商品查詢',
                 icon: 'smile',
-                path: '/chatroom',
-                component: './Chatroom',
+                path: '/commodity',
+                component: './ListCommodity',
+              },
+              {
+                name: '帳單查詢',
+                icon: 'smile',
+                path: '/payment',
+                component: './ListPayment',
+              },
+              {
+                path: '/announcement',
+                name: '公告',
+                icon: 'crown',
+                routes: [
+                  {
+                    name: '建立公告',
+                    icon: 'smile',
+                    path: '/announcement/form',
+                    component: './AnnouncementForm',
+                  },
+                  {
+                    name: '公告查詢',
+                    icon: 'smile',
+                    path: '/announcement/list',
+                    component: './ListAnnouncement',
+                  },
+                ],
               },
               {
                 component: './404',

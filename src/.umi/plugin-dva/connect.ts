@@ -6,10 +6,10 @@ import { EffectsCommandMap, SubscriptionAPI } from 'dva';
 import { match } from 'react-router-dom';
 import { Location, LocationState, History } from 'history';
 
-export * from '/Users/bo_mac01/Documents/workspace/nodejs_workspace/gam_web/src/models/global';
-export * from '/Users/bo_mac01/Documents/workspace/nodejs_workspace/gam_web/src/models/login';
-export * from '/Users/bo_mac01/Documents/workspace/nodejs_workspace/gam_web/src/models/setting';
-export * from '/Users/bo_mac01/Documents/workspace/nodejs_workspace/gam_web/src/models/user';
+export * from '/Users/bo_mac01/Documents/workspace/nodejs_workspace/gam_cms/src/models/global';
+export * from '/Users/bo_mac01/Documents/workspace/nodejs_workspace/gam_cms/src/models/login';
+export * from '/Users/bo_mac01/Documents/workspace/nodejs_workspace/gam_cms/src/models/setting';
+export * from '/Users/bo_mac01/Documents/workspace/nodejs_workspace/gam_cms/src/models/user';
 
 export interface Action<T = any> {
   type: T

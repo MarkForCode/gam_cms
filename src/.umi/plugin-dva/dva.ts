@@ -3,12 +3,12 @@ import { Component } from 'react';
 import { ApplyPluginsType } from 'umi';
 import dva from 'dva';
 // @ts-ignore
-import createLoading from '/Users/bo_mac01/Documents/workspace/nodejs_workspace/gam_web/node_modules/dva-loading/dist/index.esm.js';
+import createLoading from '/Users/bo_mac01/Documents/workspace/nodejs_workspace/gam_cms/node_modules/dva-loading/dist/index.esm.js';
 import { plugin, history } from '../core/umiExports';
-import ModelGlobal0 from '/Users/bo_mac01/Documents/workspace/nodejs_workspace/gam_web/src/models/global.ts';
-import ModelLogin1 from '/Users/bo_mac01/Documents/workspace/nodejs_workspace/gam_web/src/models/login.ts';
-import ModelSetting2 from '/Users/bo_mac01/Documents/workspace/nodejs_workspace/gam_web/src/models/setting.ts';
-import ModelUser3 from '/Users/bo_mac01/Documents/workspace/nodejs_workspace/gam_web/src/models/user.ts';
+import ModelGlobal0 from '/Users/bo_mac01/Documents/workspace/nodejs_workspace/gam_cms/src/models/global.ts';
+import ModelLogin1 from '/Users/bo_mac01/Documents/workspace/nodejs_workspace/gam_cms/src/models/login.ts';
+import ModelSetting2 from '/Users/bo_mac01/Documents/workspace/nodejs_workspace/gam_cms/src/models/setting.ts';
+import ModelUser3 from '/Users/bo_mac01/Documents/workspace/nodejs_workspace/gam_cms/src/models/user.ts';
 
 let app:any = null;
 

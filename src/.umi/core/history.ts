@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { createBrowserHistory, History } from '/Users/bo_mac01/Documents/workspace/nodejs_workspace/gam_web/node_modules/@umijs/runtime';
+import { createBrowserHistory, History } from '/Users/bo_mac01/Documents/workspace/nodejs_workspace/gam_cms/node_modules/@umijs/runtime';
 
 let options = {
   "basename": "/"
